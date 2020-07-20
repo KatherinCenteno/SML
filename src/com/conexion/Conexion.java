@@ -33,9 +33,9 @@ public class Conexion {
 	public Conexion() {
 
 		this.driver = "org.postgresql.Driver";
-		this.user = "postgres";
-		this.pwd = "tony";
-		this.cadena = "jdbc:postgresql://localhost:5432/Sport";
+		this.user = "nifykdixbfanga";
+		this.pwd = "3fb6d56f9dad1536fcc22b82c007349e57ae14f1a68712bdda29cf16186dbad2";
+		this.cadena = "jdbc:postgresql://ec2-52-202-66-191.compute-1.amazonaws.com:5432/d16kq3as9mnad9?sslmode=require";
 		this.con = this.crearConexion();
 
 	}
