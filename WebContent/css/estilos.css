@@ -1,0 +1,537 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.contenedor {
+	margin: auto;
+	width: 80%;
+}
+/*-------------Header-----------------*/
+.header {
+	height: 60px;
+}
+
+.header .contenedor {
+	display: flex;
+	color: aliceblue;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+	margin-top: 30px;
+	list-style: none;
+	display: flex;
+}
+
+.menu__link {
+	padding: 20px;
+	color: aliceblue;
+	border-radius: 15px;
+	text-decoration: none;
+}
+
+.menu__link:hover, .select {
+	background: #732B26;
+	transition: 1s;
+}
+/*-------Banner------*/
+.banner {
+	margin-top: -60px;
+	position: relative;
+	z-index: -1;
+}
+
+.banner .contenedor {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	text-align: center;
+	color: aliceblue;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.banner__titulo {
+	font-size: 50px;
+}
+/*-----------Contenedor Productos(categoria)-----------*/
+.cont_productos {
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+	margin: auto;
+	margin-top: -55%;
+	width: 90%;
+	height: 900px;
+	justify-content: space-between;
+	display: flex;
+	padding: 20px;
+	margin-bottom: 100px;
+}
+
+.categoria {
+	text-align: center;
+}
+
+.lista {
+	list-style: none;
+}
+
+.lista_categoria {
+	text-decoration: none;
+	color: aliceblue;
+}
+/*-------------Contenedor Productos(lista)-------------*/
+.lista_productos {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.lista_productos .item {
+	width: 30%;
+	max-height: 250px;
+	margin-left: 3%;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	background: white;
+	margin-bottom: 20px;
+}
+
+.lista_productos .item img {
+	padding: 10px;
+	width: 100%;
+}
+
+.lista_productos .item:hover {
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 10px 0px rgba(76, 29, 26, 1);
+	transition: 0.3s;
+}
+
+/*--------------------Detalle Producto--------------------*/
+.detalle_producto {
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+	display: flex;
+	background: white;
+	margin-bottom: 2%;
+	border: 1px solid #eee;
+}
+
+.botones {
+	margin-right: 10px;
+	background: white;
+	border: none;
+}
+
+.desplega {
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.seccion {
+	padding: 10px;
+	display: none;
+	text-align: justify;
+}
+
+.detalle_imagen {
+	padding: 2%;
+	max-width: 60%;
+	min-width: 60%;
+}
+
+.detalle_descripcion {
+	padding: 10px;
+	min-width: 40%;
+}
+
+#precio {
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+.btn_compra {
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	border: none;
+	width: 100%;
+}
+/*-----------------estilos opciones--------------------*/
+.opciones {
+	width: 400px;
+	height: 60px;
+	justify-content: space-between;
+	margin-left: 10%;
+	background: skyblue;
+	text-align: center;
+}
+
+.opciones:hover {
+	box-shadow: 0px 0px 10px 0px rgba(76, 29, 26, 1);
+	transition: 0.3s;
+}
+/*----------------estilos regprod---------------*/
+.divide {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	background: white;
+	margin-bottom: 2%;
+}
+
+.detail_prod {
+	width: 40%;
+}
+
+.detail_prod .input {
+	width: 80%;
+}
+
+.detail_prod .label {
+	width: 80%;
+}
+
+.detail_prod .btn_compra {
+	width: 80%;
+}
+
+.img_prod {
+	width: 50%;
+}
+
+.img_prod img {
+	width: 100%;
+}
+/*-----------------estilos categoria---------*/
+.kiosko {
+	margin: auto;
+	margin-top: 80px;
+	width: 100%;
+	background: rgba(76, 29, 26, 0.8);
+	height: 60px;
+}
+
+.tile {
+	margin: auto;
+	color: white;
+	margin-left: 10%;
+}
+
+.formulario {
+	margin: auto;
+	margin-top: 12px;
+	width: 90%;
+	border-radius: 10px;
+	border: solid 1px;
+	margin-bottom: 30px;
+}
+
+.formulario .input {
+	margin-left: 20px;
+	width: 50%;
+}
+
+.formulario .label {
+	width: 50%;
+}
+
+.formulario .btn_compra {
+	width: 30%;
+}
+
+.tabla {
+	border-collapse: separate;
+	border-spacing: 110px 10px;
+}
+
+/*----------------Estilos Registro-------------*/
+.registro {
+	width: 40%;
+	height: 400px;
+	background: white;
+	margin: auto;
+	margin-top: -55%;
+}
+
+.registro .input {
+	width: 70%;
+	margin-left: 40px;
+}
+/*----------------Estilos IngresoProducto----------------*/
+.cont {
+	width: 80%;
+	margin: auto;
+	margin-top: -55%;
+	display: flex;
+	justify-content: center;
+	background: white;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.datos {
+	display: table-column;
+	width: 40%;
+}
+
+.vista {
+	width: 60%;
+	display: flex;
+}
+
+.title {
+	text-align: center;
+}
+
+.label {
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
+.input {
+	width: 100%;;
+	height: 40px;
+}
+/*-----------------authEstilos----------------*/
+.authPanel {
+	width: 500px;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	margin: 60px auto 60px;
+	box-shadow: 1px 2px 6px 2px rgba(50, 50, 50, .1);
+}
+
+.authPanel li {
+	text-align: center;
+	list-style: none;
+	font-size: 30px;
+}
+
+.authwrap {
+	margin: auto;
+	justify-content: center;
+	padding: 40px 40px;
+}
+
+.authitem {
+	width: 100%;
+	height: 60px;
+}
+
+.authitem input {
+	padding: 0px 10px;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	width: 90%;
+	height: 45px;
+	font-size: 14px;
+	color: #999;
+}
+
+.tip {
+	padding: 10px 40px 10px 10px;
+	text-align: justify;
+	color: #999;
+}
+
+.btn_div {
+	padding: 20px 40px 10px 10px;
+	height: 40px;
+}
+
+.btn {
+	width: 100%;
+	height: 40px;
+	background: rgba(76, 29, 26, 0.6);
+	color: aliceblue;
+	border-radius: 4px;
+}
+
+.btn:hover {
+	background: rgba(76, 29, 26, 0.4);
+	transition: 0.5s;
+}
+/*----------------Estilos carro---------------*/
+.panelCart {
+	margin: auto;
+	min-width: 800px;
+	padding: 20px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.cartHeader {
+	border: 1px solid #eee;
+	background: #f9f9f9;
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 19px;
+}
+
+.cartHeader .tip1 {
+	width: 44.75%;
+	line-height: 50px;
+	font-size: 16px;
+	color: #999;
+}
+
+.cartHeader .tip {
+	width: 13.81%;
+	line-height: 50px;
+	font-size: 16px;
+	color: #999;
+}
+
+.cartTable {
+	width: 100%;
+}
+
+.shopList {
+	padding: 20px 20px;
+	display: flex;
+}
+
+.cartInfo {
+	display: flex;
+	width: 44.75%;
+}
+
+.cartImage {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	border: 1px solid #eee;
+	margin-right: 10px;
+	position: relative;
+}
+
+.cartDesc a {
+	text-decoration: none;
+	color: #333;
+	max-width: 340px;
+}
+
+.cartPrice, .cartQuant, .cartSubt, .cartOperation {
+	width: 13.81%;
+	padding: 10px;
+}
+/*----------------Paneles Estilos--------------*/
+.panel {
+	margin: auto;
+	width: 80%;
+	padding: 20px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.itemPanel {
+	width: 45%;
+	margin: 10px;
+	border: 1px solid #eee;
+	padding: 10px 10px;
+	text-align: justify;
+}
+
+.itemPanel h4 {
+	text-align: center;
+	font-size: 20px;
+}
+
+.itemPanel:hover {
+	background: rgba(0, 0, 0, 0.04);
+	transition: 0.5s;
+}
+
+/*--------------Estilos info--------------*/
+.info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info_columna {
+	margin-top: -100px;
+	background: rgba(76, 29, 26, 0.8);
+	color: aliceblue;
+	padding: 15px;
+	margin-bottom: 100px;
+	width: 32%;
+}
+
+.info_columna:hover {
+	background: rgba(76, 29, 26, 0.5);
+	transition: 0.5s;
+}
+/*-----------------Estilos footer-------------------*/
+.footer {
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__img {
+	width: 40px;
+}
+
+.footer__img: hover {
+	color: aqua;
+}
+
+.ups__img {
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.2);
+	width: 200px;
+}
+
+.contactos {
+	text-align: left;
+	margin-left: 50px;
+}
+
+.contactos_content {
+	list-style: none;
+}
+
+.contacto__link {
+	display: block;
+	text-decoration: none;
+	color: aliceblue;
+}
+
+.contacto__link:hover {
+	color: aqua;
+}
+
+/*-------Colores ---------*/
+.colorbartitle {
+	background: #4391DB;
+	color: white;
+	min-height: 60px;
+	margin-bottom: 10px;
+}
+/*----------Utimo----------*/
+.navbar {
+	margin-bottom: 30px;
+}
